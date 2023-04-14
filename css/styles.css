@@ -219,7 +219,7 @@ span{
     transform: scale(1.02);
 }
 
-.services-box i{
+.services-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
@@ -233,12 +233,16 @@ span{
     margin: 1rem 0 3rem;
 }
 
+.contact{
+    background: var(--second-bg-color);
+}
+
 .contact h2{
     margin-bottom: 3rem;
 }
 
 .contact form{
-    max-width: 703rem;
+    max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -256,7 +260,7 @@ span{
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -280,7 +284,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p{
