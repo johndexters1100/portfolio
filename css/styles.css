@@ -421,3 +421,127 @@ span{
         margin-top: 2rem;
     }
 }
+
+/* ABOUT.HTML CSS */
+
+.about-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.about-page img{
+    width: 20vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.about-page-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.about-page-content-skill { 
+    width: 70rem;
+    margin: 5rem auto;
+    color: var(--text-color);
+    padding: 3rem;
+    box-shadow: 0 .5rem 1rem var(--second-bg-color);
+}
+.box {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    box-shadow: none;
+}
+
+.about-page-content-skill h2{
+    text-align: center;
+    font-size: 3rem;
+}
+.about-page-content-skill h3{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.about-page-content-skill {
+    list-style-type: none;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.bar{
+    background: var(--second-bg-color);
+    display: block;
+    height: 4rem;
+    border: .2rem solid #00000033;
+    border-radius: 4rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.2), 0 1rem 2rem rgba(0,0,0,.4);
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover {
+    box-shadow: 0 .5rem 1rem var(--second-bg-color);
+}
+
+.bar span{
+    height: 4rem; 
+    float: left;
+    background: var(--main-color);
+}
+
+.html{
+    width: 45%;
+    animation: html 3s;
+}
+.css{
+    width: 40%;
+    animation: css 3s;
+}
+.php{
+    width: 30%;
+    animation: php 3s;
+}
+.javascript{
+    width: 20%;
+    animation: javascript 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
